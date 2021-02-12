@@ -1,0 +1,17 @@
+[11-Feb-2021 06:39:01 UTC] WordPress database error Incorrect index name '' for query ALTER TABLE wp_fc_items ADD KEY `` (`fc_listID`) made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Frontend_Checklist::update, Frontend_Checklist::activation, dbDelta
+[11-Feb-2021 11:20:31 UTC] WordPress database error Commands out of sync; you can't run this command now for query 
+			DELETE
+				a,
+				b
+			FROM
+				wp_options a
+				INNER JOIN wp_options b
+					ON b.option_name = CONCAT( '_transient_timeout_', SUBSTRING( a.option_name, 12 ) )
+					AND b.option_value < 1613042431
+			WHERE
+				a.option_name LIKE '\_transient\_tribe\_%'
+				AND a.option_name NOT LIKE '\_transient\_timeout\_tribe\_%'
+		 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, Tribe__Cache->maybe_delete_expired_transients, Tribe__Cache->delete_expired_transients
+[11-Feb-2021 11:20:31 UTC] WordPress database error Commands out of sync; you can't run this command now for query UPDATE `wp_options` SET `option_value` = '1613042491' WHERE `option_name` = 'action_scheduler_lock_async-request-runner' made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, ActionScheduler_OptionLock->set, update_option
+[11-Feb-2021 11:20:31 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT COUNT(DISTINCT claim_id) FROM wp_actionscheduler_actions WHERE claim_id != 0 AND status IN ( 'pending', 'in-progress') made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, ActionScheduler_AsyncRequest_QueueRunner->maybe_dispatch, ActionScheduler_AsyncRequest_QueueRunner->allow, ActionScheduler_Abstract_QueueRunner->has_maximum_concurrent_batches, ActionScheduler_DBStore->get_claim_count
+[11-Feb-2021 11:20:31 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT a.action_id FROM wp_actionscheduler_actions a WHERE 1=1 AND a.status='pending' AND a.scheduled_date_gmt <= '2021-02-11 11:20:31' ORDER BY a.scheduled_date_gmt ASC LIMIT 0, 5 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, ActionScheduler_AsyncRequest_QueueRunner->maybe_dispatch, ActionScheduler_AsyncRequest_QueueRunner->allow, ActionScheduler_Store->has_pending_actions_due, ActionScheduler_DBStore->query_actions
