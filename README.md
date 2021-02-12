@@ -27,13 +27,13 @@ Technical Specifications
 For the Project  I have used the wordpress framework.
 PHP is used as a backend language for integrating plugins and other required modifications. 
 Technologies Used:
-HTML/CSS for UI Designing
-Javascript
-Php Version 7.4 
-Wordpress 5.6.1 
-MYSQL Database 
+*HTML/CSS for UI Designing
+*Javascript
+*Php Version 7.4 
+*Wordpress 5.6.1 
+*MYSQL Database 
 
 For Future maintenance :
 
-Update wordpress framework time to time
-Addition of all required features
+*Update wordpress framework time to time
+*Addition of all required features
