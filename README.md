@@ -9,6 +9,7 @@ Youtube video basic: https://www.youtube.com/watch?v=HTcJd_yzODw
 
 [The size of file was above 25 mb and was not able to lead as file so uploaded it in a youtube link]
 
+Youtube video with discription of basic working of project: https://www.youtube.com/watch?v=ko22J5Zq6N0  
 
 About Application
 
